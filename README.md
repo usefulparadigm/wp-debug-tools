@@ -4,9 +4,17 @@ WordPress Debug Tools
 Using ChromePhp:
 -----
 
-    ChromePhp::log('Hello console!');
+    ChromePhp::log('hello world');
     ChromePhp::log($_SERVER);
-    ChromePhp::warn('something went wrong!');
+
+    // using labels
+    foreach ($_SERVER as $key => $value) {
+        ChromePhp::log($key, $value);
+    }
+
+    // warnings and errors
+    ChromePhp::warn('this is a warning');
+    ChromePhp::error('this is an error');
 
 More information can be found here: [http://www.chromelogger.com](http://www.chromelogger.com)
 
