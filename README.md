@@ -19,7 +19,7 @@ Using WordPress debug log:
 
 After refreshing your page once, you should see a newly created debug.php file with a few lines of output. Use any log viewing utility that supports tailing the file for maximum productivity. On Mac, Unix and Linux systems, you can use this command from the main directory of your site:
 
-  tail -f wp-content/debug.log
+    tail -f wp-content/debug.log
 
 
 Credits:
