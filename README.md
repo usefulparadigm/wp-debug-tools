@@ -4,9 +4,9 @@ WordPress Debug Tools
 Using ChromePhp:
 -----
 
-  ChromePhp::log('Hello console!');
-  ChromePhp::log($_SERVER);
-  ChromePhp::warn('something went wrong!');
+    ChromePhp::log('Hello console!');
+    ChromePhp::log($_SERVER);
+    ChromePhp::warn('something went wrong!');
 
 More information can be found here: [http://www.chromelogger.com](http://www.chromelogger.com)
 
@@ -14,8 +14,8 @@ More information can be found here: [http://www.chromelogger.com](http://www.chr
 Using WordPress debug log:
 -----
 
-  _log('Testing the error message logging');
-  _log(array('it' => 'works'));
+    _log('Testing the error message logging');
+    _log(array('it' => 'works'));
 
 After refreshing your page once, you should see a newly created debug.php file with a few lines of output. Use any log viewing utility that supports tailing the file for maximum productivity. On Mac, Unix and Linux systems, you can use this command from the main directory of your site:
 
