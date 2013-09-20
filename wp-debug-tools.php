@@ -27,6 +27,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Include constants file
 require_once( dirname( __FILE__ ) . '/lib/ChromePhp.php' );
 
+add_action('init', 'wpdt_php_buffer_start');
+// add_action('wp_footer', 'wpdt_php_buffer_end');
+
+function wpdt_php_buffer_start() { ob_start(); }
+function wpdt_php_buffer_end() { ob_end_flush(); }
+
+
 // http://fuelyourcoding.com/simple-debugging-with-wordpress/
 
 if(!function_exists('_log')){
