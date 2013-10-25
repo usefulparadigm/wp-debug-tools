@@ -25,7 +25,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 // Include constants file
-require_once( dirname( __FILE__ ) . '/lib/ChromePhp.php' );
+require_once( dirname( __FILE__ ) . '/inc/ChromePhp.php' );
 
 add_action('init', 'wpdt_php_buffer_start');
 // add_action('wp_footer', 'wpdt_php_buffer_end');
